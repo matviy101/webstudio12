@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WEBSTUDIO</title>
 <style>
-  /* General Styles */
   body {
       font-family: 'Rubik', sans-serif;
       line-height: 1.6;
@@ -19,14 +18,12 @@
       padding: 0;
   }
   
-  /* Layout Container */
   .container {
       width: 1200px;
       padding: 0 15px;
       margin: 0 auto;
   }
 
-  /* Header */
   header {
       display: flex;
       justify-content: space-between;
@@ -68,15 +65,29 @@
     color: white;
  }
 
- .effective {
+
+
+ .hero-section {
     display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
-  background-color: #2F303A;
-  color: white; 
-  font-size: 24px;
- }
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color: white;
+    text-align: center;
+}
+
+
+.effective {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.stockcake.com/public/8/4/e/84eb3758-795d-4a1c-8919-b8fce3a1b9e7_large/tech-team-working-stockcake.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
 
  .hfour {
     margin: 0 auto;
@@ -117,6 +128,10 @@
   width: 300px; 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+.komanda {
+  background-color:#F5F4FA;
+}
   </style>
     <div class="container">
 <body>
@@ -156,6 +171,7 @@
     <img class="img" src="c:\Users\sysko\Downloads\image (7).jpg" alt="image"/>
    </div>
     <h1 class="hfour">Наша команда</h1>
+    <div class="komanda">
     <ul>
       <img class="small-img" src="c:\Users\sysko\Downloads\image (10).jpg" alt="Image"/>
 
@@ -172,6 +188,7 @@
 <li>Михайло Єрмаков<br>
 <p>UI Designer</p></li>
 </ul>
+</div>
     <div class="container">
     <footer class="co">
       <svg width="145" height="20" viewBox="0 0 145 20" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -145,10 +145,80 @@ a:hover {
   color: white;
 }
 
+.icons:hover {
+  fill: blue;
+}
+
 .icons2 {
   background-color: grey;
 }
 
+.icons2:hover {
+ fill: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
  </style>
     <div class="container">
 <body>
@@ -184,11 +254,18 @@ a:hover {
     <br>
     <h2 class="hfour">Чим ми займаємося</h2> 
   </div>
-    <div class="image.container">
-    <img class="img" src="c:\Users\sysko\Downloads\image (5).jpg" alt="image"/>
-    <img class="img" src="c:\Users\sysko\Downloads\image (6).jpg" alt="image"/>
-    <img class="img" src="c:\Users\sysko\Downloads\ff490664ba91f138b9f708e01d65306a.jpg" alt="image">
-   </div>
+  <div class="image-container">
+    <div class="image-wrapper">
+      <img class="img" src="c:\Users\sysko\Downloads\image (5).jpg" alt="image" />
+      <div class="overlay-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
+    </div>
+    <div class="image-wrapper">
+      <img class="img" src="c:\Users\sysko\Downloads\image (6).jpg" alt="image" />
+      <div class="overlay-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
+    </div>
+    <div class="image-wrapper">
+      <img class="img" src="https://s3-alpha-sig.figma.com/img/4ca1/03f5/ff490664ba91f138b9f708e01d65306a?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnYnUsOO~fFDjDWhFh4mStnVgy3lMN~VAptRhhaOhnsZQ9hS2eBq4azHd45jZAmWVGOwwAf8IkoX6Xwk1LWwHZJDYOodrNH1CpIXHVtFHtkWEvpmdVnizwIhRSYvzxKux387brWhcLLbg5jNQWD7C0L1MBbn62we20UCS85ByLbUnLIna6VFJ0dTeaa8QlV5gaU-fdbuXq4sAY~gzmlf09Gx7-w5MEPHKRCHADWqgEKS~ExR6zG2d2d5e6tPZoVS9uJlCD2XKtLZ55aEJ46Vrskv3PUcMvX5GSOXHYPkgRKCx65GdWKpwly7UJYS-PD-TXE7rf3ThoYssdJBXF-UxQ__" alt="image" />
+      <div class="overlay-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
     <h1 class="hfour">Наша команда</h1>
     <div class="komanda">
     <ul>

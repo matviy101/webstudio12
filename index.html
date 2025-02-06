@@ -404,6 +404,67 @@ body {
   height: 690px;
   width: 560px;
 }
+
+.linksss {
+  display: flex;
+  gap: 20px; /* Adds spacing between elements */
+  align-items: center;
+}
+
+
+
+.linksss {
+  display: flex;
+  gap: 20px; /* Adds spacing between elements */
+  align-items: center;
+}
+
+.link_underline {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 5px; /* Space between text and underline */
+}
+
+.link_underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Initially hidden */
+  height: 2px;
+  background-color: blue; /* Underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.link_underline.active::after {
+  width: 100%; /* Fully visible underline for active link */
+}
+
+/* Optional: Underline on hover */
+.link_underline:hover::after {
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: gray;
+}
+
+.linksss a {
+  text-decoration: none;
+  color: black;
+}
+
+
  </style>
     <div class="container">
 <body>
@@ -420,9 +481,9 @@ body {
   </div>
 
   <div class="linksss">
-    <a href="#">Студія</a>
-    <a href="#">Портфоліо</a>
-    <a href="#">Контакти</a>
+    <a class="link_underline" href="#">Студія</a>
+    <a class="link_underline" href="#">Портфоліо</a>
+    <a class="link_underline" href="#">Контакти</a>
     <button data-modal-open><a href="#" >info@devstudio.com</a></button>
     <a href="#" >+38 096 111 11 11</a>
   </div>

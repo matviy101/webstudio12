@@ -1,0 +1,94 @@
+body {
+    font-family: "roboto";
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(147, 147, 147);
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .black {
+    color: black;
+  }
+  
+  .nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav a:hover {
+    color: #2196F3;
+  }
+  
+  .contact-info a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(118, 118, 118);
+  }
+  
+.contact-info a:hover {
+    color: black;
+}
+
+.buttons {
+    display: flex;            
+    justify-content: center; 
+    align-items: center;
+    padding-top: 40px;
+    gap: 20px;
+    border-style: none;
+    color: #2196F3;
+}
+
+.buttons_in_div {
+    border-style: none;
+    background-color: #F5F4FA;
+    color: black;
+    width: 80px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.buttons_in_div:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+.boxes {
+    padding-top: 50px;
+    padding-left: 30px;
+    border-style: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box1 {
+    padding-top: 50px;
+    padding-left: 30px;
+    border-style: 1px solid black;
+    width: 370px;
+    height: 460px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgbox1 {
+    width: 400px;
+    height: 294px;
+}

@@ -28,6 +28,7 @@ header {
     margin: 0 10px;
     text-decoration: none;
     color: black;
+    transition: color 250ms ease-in-out;
   }
 
   .nav a:hover {
@@ -37,11 +38,15 @@ header {
   .contact-info a {
     margin-left: 15px;
     text-decoration: none;
-    color: rgb(118, 118, 118);
+    position: relative;
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
   }
   
-.contact-info a:hover {
+  .contact-info a:hover {
     color: black;
+    transition: color 250ms ease-in-out;
 }
 
 .buttons {
@@ -66,29 +71,70 @@ header {
 .buttons_in_div:hover {
     background-color: #2196F3;
     color: white;
+    transition: color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out;
 }
 
+/*Boxes*/
+
 .boxes {
-    padding-top: 50px;
-    padding-left: 30px;
-    border-style: 1px solid black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 .box1 {
-    padding-top: 50px;
-    padding-left: 30px;
-    border-style: 1px solid black;
-    width: 370px;
-    height: 460px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  width: 370px;
+  height: 404px;
+  border-style: solid 20px black;
 }
 
 .imgbox1 {
-    width: 400px;
-    height: 294px;
+  height: 294px;
+  width: 370px;
+}
+
+/* boxes 2 */
+
+.boxes2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box_one {
+  padding-left: 20px;
+  width: 370px;
+  height: 404px;
+  border-style: solid 20px black;
+}
+
+/* boxes3 */
+
+.boxes3 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.boxe_1 {
+  padding-left: 20px;
+  width: 370px;
+  height: 404px;
+  border-style: solid 20px black;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2F303A;
+}
+
+.logo2 {
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -407,7 +407,7 @@ body {
 
 .linksss {
   display: flex;
-  gap: 20px; /* Adds spacing between elements */
+  gap: 20px; 
   align-items: center;
 }
 
@@ -415,7 +415,7 @@ body {
 
 .linksss {
   display: flex;
-  gap: 20px; /* Adds spacing between elements */
+  gap: 20px;
   align-items: center;
 }
 
@@ -424,25 +424,26 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  padding-bottom: 5px; /* Space between text and underline */
+  padding-bottom: 5px; 
 }
 
 .link_underline::after {
+  color:#007bff;
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0; /* Initially hidden */
+  width: 0; 
   height: 2px;
-  background-color: blue; /* Underline color */
-  transition: width 0.3s ease-in-out;
+  background-color: #007bff;; 
+  transition: width  250ms ease-in-out;
 }
 
 .link_underline.active::after {
-  width: 100%; /* Fully visible underline for active link */
+  width: 100%; 
+  transition: width cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Optional: Underline on hover */
 .link_underline:hover::after {
   width: 100%;
 }
@@ -464,6 +465,14 @@ button a {
   color: black;
 }
 
+.infoweb {
+  color: black
+}
+
+.infoweb:hover {
+  color:#007bff;
+  transition: color 250ms ease-in-out;
+}
 
  </style>
     <div class="container">
@@ -484,8 +493,8 @@ button a {
     <a class="link_underline" href="#">Студія</a>
     <a class="link_underline" href="#">Портфоліо</a>
     <a class="link_underline" href="#">Контакти</a>
-    <button data-modal-open><a href="#" >info@devstudio.com</a></button>
-    <a href="#" >+38 096 111 11 11</a>
+    <button data-modal-open><a class="infoweb" href="#" >info@devstudio.com</a></button>
+    <a class="infoweb" href="#" >+38 096 111 11 11</a>
   </div>
 
   
